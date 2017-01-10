@@ -84,7 +84,7 @@ We simply instantiate the controller manually, call its methods, and check they 
 
 ## Running the test
 
-Just as with out last example, the easiest way to run this test is in the browser. We have a file called `specs.html`, that looks like this:
+Just as with our last example, the easiest way to run this test is in the browser. We have a file called `specs.html`, that looks like this:
 
 ```
 <!DOCTYPE html>
@@ -122,7 +122,13 @@ Now add a zero function that returns the floor to zero. Write the test first, th
 
 ## Exercise 2 - Calculator
 
-Open up Exercise 2. You'll find a small calculator app, which doesn't work because nobody has written the controller yet. Use your best TDD/BDD to write a controller using red/green refactoring.
+Open up Exercise 2. You'll find a small calculator app, which doesn't work because nobody has written the controller yet. Use your best TDD/BDD to write a controller to make the spec go green.
+
+Use red/green refactoring to add ceiling, round and floor functions, such that: 
+
+* `controller.ceiling(13.2) === 14` 
+* `controller.floor(13.2) === 13` 
+* `controller.round(13.2) === 13` .
 
 ## Exercise 3 - Pirate Exercise
 
@@ -130,4 +136,4 @@ Take your pirate code from before and pop it into a controller.
 
 *If you know about factories, you might want to make a simple pirate factory. Otherwise, just leave it as app.pirate.*
 
-Make a simple front end for it with buttons that will let you navigate. use BDD to verify that the pirate does in fact move around.
+Make a simple front end for it with buttons that will let you navigate. Use BDD to verify that the pirate does, in fact, move around.

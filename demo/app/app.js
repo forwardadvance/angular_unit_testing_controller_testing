@@ -1,2 +1,1 @@
-angular.module('app', [])
-  .controller('liftController', app.LiftController);
+angular.module('app', []);

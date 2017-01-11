@@ -1,8 +1,9 @@
 describe('app', () => {
   describe('liftController', () => {
-    var liftController;
+    var liftController, scope;
     beforeEach(() => {
-      liftController = new app.LiftController()
+      scope = {}
+      liftController = new app.LiftController(scope);
     });
 
     it("should have a floor", () => {
@@ -19,7 +20,7 @@ describe('app', () => {
       var initialValue = liftController.floor;
       liftController.goDown();
       expect( liftController.floor ).toBe( initialValue - 1 );
-    })
+    });
 
   })
 });

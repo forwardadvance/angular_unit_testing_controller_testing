@@ -1,6 +1,6 @@
 var app = app || {}
 
-app.LiftController = function() {
+app.LiftController = function($scope) {
   this.floor = 0;
   this.goUp = () => {
     this.floor ++;
